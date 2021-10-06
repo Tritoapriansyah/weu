@@ -54,10 +54,10 @@ const imgbb = require('imgbb-uploader');
 const os = require('os');
 
 //𝙁𝘼𝙆𝙀 𝙉𝙔𝘼 𝘽𝘼𝙉𝙂
-rezakon = '㋡𝐾𝑢𝑛𝑧𝐵𝑜𝑡𝑧'
-fake = '㋡𝐾𝑢𝑛𝑧𝐵𝑜𝑡𝑧'
+rezakon = '𝗟𝗼𝗹𝗶𝘁𝗮 𝗯𝗼𝘁'
+fake = '𝗟𝗼𝗹𝗶𝘁𝗮 𝗯𝗼𝘁'
 //Ganti No Owner Ok
-const Tag = "6287778886786"
+const Tag = "6285888258313"
 
 // stickwm
 const Exif = require('./lib/exif');
@@ -371,7 +371,6 @@ module.exports = Hisnu = async (Hisnu, mek) => {
         const mentions = (teks, memberr, id) => {
            (id == null || id == undefined || id == false) ? Hisnu.sendMessage(from, {text: teks.trim(), jpegThumbnail: fs.readFileSync('./media/wpmobile.png')}, extendedText, { sendEphemeral: true, contextInfo: { "mentionedJid": memberr } }) : Hisnu.sendMessage(from, {text: teks.trim(), jpegThumbnail: fs.readFileSync('./media/wpmobile.png')}, extendedText, { sendEphemeral: true, quoted: mek, contextInfo: { "mentionedJid": memberr } })
         
-        const meky = "6281333603591@s.whatsapp.net" //ganti nomer lu
 Hisnu.sendMessage(from, gambar, image, {thumbnail: fakeimg, quoted:xyz, contextInfo:{"forwardingScore":999,"isForwarded":true, "mentionedJid": [SadGril],"externalAdReply": {"title": `Hai Kak ${pushname}👋🏻`, mediaType: 2, "thumbnailUrl": "https://telegra.ph/file/6b0259fd741e108910fbe.jpg","previewType": "VIDEO","mediaUrl": `https://youtu.be/pJU6Rr3SQ4g`}}})
         }
         const fakestatus = (teks) => {
@@ -1075,8 +1074,8 @@ Hisnu.sendMessage(from,  buttonMessagee, MessageType.buttonsMessage,{
 					break
          case 'menu':
         case 'help':
-        case 'kunz':  
-               const boy = "6281333603591@s.whatsapp.net"     
+        case 'Lolita':  
+               const boy = "6285888258313@s.whatsapp.net"     
                const filename = `@${sender.replace('@s.whatsapp.net', '')}-${moment().unix()}`
                const nomoruser = `${sender.replace('@s.whatsapp.net', '')}-${moment().unix()}`
                parseMention = (text = '') => {
@@ -1111,7 +1110,7 @@ Hisnu.sendMessage(from,  buttonMessagee, MessageType.buttonsMessage,{
                             break
 //<==========[ ALL MENU ]==========>  
                  case 'allmeu':
-                           tagme = '6287778886786'
+                           tagme = '6285888258313'
                            timestampe = speed();
                            latensie = speed() - timestampe
                            parseMention = (text = '') => {
@@ -5108,7 +5107,7 @@ katalog(menu)
 break
 case 'sewabotz':
 menu = `
-🔰 -----[ 「 𝑺𝒆𝒘𝒂 𝑩𝒚 𝑩𝒐𝒕𝒛 𝑫𝒉𝒂𝒏𝒊 」 ]----- 🔰
+🔰 -----[ 「 𝑺𝒆𝒘𝒂  」 ]----- 🔰
 ──────────────────────────────
 ◯ 𝘿𝙖𝙛𝙩𝙖𝙧 𝙎𝙚𝙬𝙖 𝘽𝙤𝙩
 ◯ 𝟏 𝑴𝒊𝒏𝒈𝒈𝒖 : 𝟏𝟎𝑲
@@ -6230,7 +6229,7 @@ res = await Hisnu.prepareMessageFromContent(from,{
 "priceAmount1000": "10000",
 "productImageCount": 1
 },
-"businessOwnerJid": "6281333603591@s.whatsapp.net",
+"businessOwnerJid": "6285888258313@s.whatsapp.net",
 "contextInfo": {
 "forwardingScore": 3,
 "isForwarded": true
@@ -6256,7 +6255,7 @@ res = await Hisnu.prepareMessageFromContent(from,{
 "priceAmount1000": "9999999999999999",
 "productImageCount": 1
 },
-"businessOwnerJid": "6281333603591@s.whatsapp.net",
+"businessOwnerJid": "6285888258313@s.whatsapp.net",
 "contextInfo": {
 "forwardingScore": 3,
 "isForwarded": true
@@ -6282,7 +6281,7 @@ res = await Hisnu.prepareMessageFromContent(from,{
 "priceAmount1000": "999999999999999999",
 "productImageCount": 2
 },
-"businessOwnerJid": "6281333603591@s.whatsapp.net",
+"businessOwnerJid": "6285888258313@s.whatsapp.net",
 "contextInfo": {
 "forwardingScore": 3,
 "isForwarded": true
@@ -6412,7 +6411,7 @@ case 'caripesan':  //by ANU TEAM
               if (args.length < 1) return reply(`Ketik ${prefix}bugreport [fiturnya] [Error Nya Gimana]`) 
               teks = args.join(' ')
               reply('Terima Kasih Telah Melaporkan Bug Pada Owner, Jika Itu Sekedar Iseng Maka Akan Di Ban Oleh Bot!')
-              Hisnu.sendMessage('6281333603591@s.whatsapp.net',`*Bug Report:* ${teks}`, text)
+              Hisnu.sendMessage('6285888258313@s.whatsapp.net',`*Bug Report:* ${teks}`, text)
               break
        case 'readall':
               totalchat.map( async ({ jid }) => {
@@ -6606,7 +6605,7 @@ res = await Hisnu.prepareMessageFromContent(from,{
 "priceAmount1000": "9999999999999999999999999999999999",
 "productImageCount": 1
 },
-"businessOwnerJid": "6281333603591@s.whatsapp.net",
+"businessOwnerJid": "6285888258313@s.whatsapp.net",
 "contextInfo": {
 "forwardingScore": 3,
 "isForwarded": true
@@ -6744,7 +6743,7 @@ if (args.length < 1) return reply('Jumlahnya?')
 		        Hisnu.sendMessage(from, options, text, {quoted:{ 
 	    key: {
 	    fromMe: false, 
-	    participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "6281333603591@s.whatsapp.net" } : {}) 
+	    participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "6285888258313@s.whatsapp.net" } : {}) 
 	    },
                         "message": {
                         "orderMessage": {
@@ -6754,7 +6753,7 @@ if (args.length < 1) return reply('Jumlahnya?')
 						"surface": "CATALOG",
 						"message": `𝑩𝒐𝒕𝒛 𝑫𝒉𝒂𝒏𝒊☕︎`,
 						"orderTitle": `${fake}`,
-						"sellerJid": "6281333603591@s.whatsapp.net",
+						"sellerJid": "6285888258313@s.whatsapp.net",
 						"token": "AR4QmUKv7r4P0XYHtHmhLqoFOOhwn8SqO903CVo9raQL4A=="
 					}}}})
 		        }
@@ -6763,7 +6762,7 @@ if (args.length < 1) return reply('Jumlahnya?')
 		        Hisnu.sendMessage(from, 'Berhasil Mengirim Bug Troli2', text, {quoted:{ 
 	    key: {
 	    fromMe: false, 
-	    participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "6281333603591@s.whatsapp.net" } : {}) 
+	    participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "6285888258313@s.whatsapp.net" } : {}) 
 	    },
                         "message": {
                         "orderMessage": {
@@ -6773,7 +6772,7 @@ if (args.length < 1) return reply('Jumlahnya?')
 						"surface": "CATALOG",
 						"message": `𝑩𝒐𝒕𝒛 𝑫𝒉𝒂𝒏𝒊☕︎`,
 						"orderTitle": `${fake}`,
-						"sellerJid": "6281333603591@s.whatsapp.net",
+						"sellerJid": "6285888258313@s.whatsapp.net",
 						"token": "AR4QmUKv7r4P0XYHtHmhLqoFOOhwn8SqO903CVo9raQL4A=="
 					}}}})
 		        }
