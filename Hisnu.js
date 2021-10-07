@@ -127,7 +127,7 @@ let sewa = JSON.parse(fs.readFileSync('./database/group/sewa.json'));
 let _scommand = JSON.parse(fs.readFileSync('./database/bot/scommand.json'))
 
 //ADA LAH
-banChats = true
+banChats = false
 offline = false
 antitags = true
 
