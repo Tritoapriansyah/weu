@@ -3006,7 +3006,7 @@ break
               Hisnu.relayWAMessage(prep)
               fs.unlinkSync(`./${sender}.jpeg`)
               break
-        case 'playy':
+        case 'play':
 case 'lagu':
 if (isBanned) return reply('Maaf tapi kamu sudah terbanned silahkan ketik .owner untuk menggunakan fitur bot lagi')
 if (args.length < 1) return reply('Apa Yang Mau Dicari?')
